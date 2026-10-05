@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* ─── CSS custom properties ─────────────────────── */
+:root {
+  --bg-primary: #050505;
+  --gold: #f5b82e;
+  --text-primary: #f5f0e8;
+  --text-muted: #a69a86;
+}
+
+/* ─── Base ───────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #050505;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* ─── Font utilities ─────────────────────────────── */
+.font-marker {
+  font-family: var(--font-marker), cursive, sans-serif;
+}
+.font-body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+}
